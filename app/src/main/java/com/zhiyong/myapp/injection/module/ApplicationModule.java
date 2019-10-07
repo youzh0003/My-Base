@@ -40,4 +40,16 @@ public class ApplicationModule {
     public SharedPreferences provideSharePreferences(){
         return PreferenceManager.getDefaultSharedPreferences(mApplication);
     }
+
+    @Provides
+    @Singleton
+    ThreadExecutor provideThreadExecutor(JobExecutor jobExecutor) {
+        return jobExecutor;
+    }
+
+    @Provides
+    @Singleton
+    PostExecutionThread providePostExecutionThread(UIThread uiThread) {
+        return uiThread;
+    }
 }

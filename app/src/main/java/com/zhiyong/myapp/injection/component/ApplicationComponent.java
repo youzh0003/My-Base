@@ -3,6 +3,8 @@ package com.zhiyong.myapp.injection.component;
 import android.app.Application;
 import android.content.Context;
 
+import com.zhiyong.myapp.executor.PostExecutionThread;
+import com.zhiyong.myapp.executor.ThreadExecutor;
 import com.zhiyong.myapp.injection.ApplicationContext;
 import com.zhiyong.myapp.injection.module.ApplicationModule;
 
@@ -23,4 +25,9 @@ public interface ApplicationComponent {
     Context context();
 
     Application application();
+
+
+    ThreadExecutor threadExecutor();
+
+    PostExecutionThread postExecutionThread();
 }
