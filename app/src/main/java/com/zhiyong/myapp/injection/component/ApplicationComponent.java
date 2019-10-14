@@ -26,7 +26,6 @@ public interface ApplicationComponent {
 
     Application application();
 
-
     ThreadExecutor threadExecutor();
 
     PostExecutionThread postExecutionThread();

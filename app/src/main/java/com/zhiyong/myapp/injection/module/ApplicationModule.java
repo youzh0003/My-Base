@@ -5,6 +5,10 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 
+import com.zhiyong.myapp.executor.JobExecutor;
+import com.zhiyong.myapp.executor.PostExecutionThread;
+import com.zhiyong.myapp.executor.ThreadExecutor;
+import com.zhiyong.myapp.executor.UIThread;
 import com.zhiyong.myapp.injection.ApplicationContext;
 
 import javax.inject.Singleton;
